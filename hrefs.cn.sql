@@ -22,7 +22,7 @@ CREATE TABLE `article` (
   `visited` int(11) NOT NULL DEFAULT '0',
   `brief` varchar(500) NOT NULL,
   `body` text NOT NULL,
-  `createTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `createTime` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -35,7 +35,7 @@ CREATE TABLE `cuslink` (
   `visited` int(11) DEFAULT '0',
   `linktype` varchar(50) DEFAULT NULL,
   `adddate` datetime NOT NULL,
-  `updatedate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updatedate` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 
@@ -47,7 +47,7 @@ CREATE TABLE `link` (
   `url` varchar(200) NOT NULL,
   `title` varchar(100) NOT NULL,
   `brief` varchar(1000) NOT NULL,
-  `createtime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `createtime` datetime  DEFAULT NULL,
   `visited` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

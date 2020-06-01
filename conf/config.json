@@ -1,6 +1,6 @@
 {
   "mysql": {
-    "hrefs": "root:123456@tcp(192.168.111.151:3306)/hrefsdb?charset=utf8",
+    "hrefs": "root:homestead@secret(127.0.0.1:3306)/hrefsdb?charset=utf8",
     "MaxIdleConns": 5,
     "MaxOpenConns": 50,
     "gorp": {
@@ -8,11 +8,11 @@
     }
   },
   "redis": {
-    "host": "192.168.111.151",
+    "host": "127.0.0.1",
     "port": 6379
   },
   "consul": [{
-    "host": "192.168.111.151",
+    "host": "127.0.0.1",
     "port": 8500
   }],
   "srv": "micro.hrefs.srv",
