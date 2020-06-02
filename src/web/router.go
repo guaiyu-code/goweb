@@ -26,7 +26,7 @@ func Start() {
 	app.Get("/cuslink/{id}", controller.GetCusLinkUrl)
 
 	app.Run(
-		iris.Addr(":80"),
+		iris.Addr(":8080"),
 		iris.WithoutBanner,
 		iris.WithoutServerError(iris.ErrServerClosed),
 	)
